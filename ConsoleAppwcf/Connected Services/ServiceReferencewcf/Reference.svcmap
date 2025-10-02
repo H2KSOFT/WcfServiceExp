@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="475ef7b6-501d-4c71-a6f8-c8bc03c7c422" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52347/WcfOrdenService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WcfOrdenService.xsd" MetadataType="Schema" ID="c7065821-8d96-4db0-bed4-31fe98e610b6" SourceId="1" SourceUrl="http://localhost:52347/WcfOrdenService.svc?xsd=xsd1" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="26a5cdfa-4b93-403d-9e61-080c7d814fd6" SourceId="1" SourceUrl="http://localhost:52347/WcfOrdenService.svc?wsdl" />
+    <MetadataFile FileName="WcfOrdenService1.xsd" MetadataType="Schema" ID="d1fafbb9-5087-4d53-879a-b792c91c1847" SourceId="1" SourceUrl="http://localhost:52347/WcfOrdenService.svc?xsd=xsd2" />
+    <MetadataFile FileName="WcfOrdenService.disco" MetadataType="Disco" ID="57953ad0-3ef8-4098-b2a4-c42425a83375" SourceId="1" SourceUrl="http://localhost:52347/WcfOrdenService.svc?disco" />
+    <MetadataFile FileName="WcfOrdenService2.xsd" MetadataType="Schema" ID="9a6e5ba9-cb17-4e30-b102-9bd6530e1edd" SourceId="1" SourceUrl="http://localhost:52347/WcfOrdenService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

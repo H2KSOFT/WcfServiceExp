@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfServiceExp" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfServiceExp" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="OrdenContrato">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cliente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Detalles" nillable="true" type="tns:ArrayOfDetalleOrdenContrato" />
+      <xs:element minOccurs="0" name="Fecha" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Total" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrdenContrato" nillable="true" type="tns:OrdenContrato" />
+  <xs:complexType name="ArrayOfDetalleOrdenContrato">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DetalleOrdenContrato" nillable="true" type="tns:DetalleOrdenContrato" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDetalleOrdenContrato" nillable="true" type="tns:ArrayOfDetalleOrdenContrato" />
+  <xs:complexType name="DetalleOrdenContrato">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cantidad" type="xs:int" />
+      <xs:element minOccurs="0" name="PrecioUnitario" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Producto" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DetalleOrdenContrato" nillable="true" type="tns:DetalleOrdenContrato" />
+  <xs:complexType name="RespuestaOrden">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Exito" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Mensaje" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrdenId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RespuestaOrden" nillable="true" type="tns:RespuestaOrden" />
+</xs:schema>
